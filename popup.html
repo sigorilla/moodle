@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moodle Breaker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body class="text-center">
+
+<h1>Moodle</h1>
+<hr>
+
+<p>
+  <button type="button" id="solve" class="btn btn-success btn-lg">Break it!</button>
+</p>
+
+<form id="optionForm">
+  <p>
+    <input type="checkbox" name="remember" id="remember">
+    <label for="remember">
+      <span></span>
+      Answer instantly? 
+      <small id="saved"></small>
+    </label>
+  </p>
+</form>
+
+<p class="text-right hidden"><span id="about">About</span></p>
+
+<script src="popup.js"></script>
+
+</body>
+</html>

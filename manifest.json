@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Moodle Breaker",
+  "version": "1.4",
+  "description": "A Chrome plugin, which allows busy MIPT students to do english on Moodle easily.",
+  "icons": {
+    "128": "128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://moodle.phystech.edu/",
+    "storage"
+  ],
+  "browser_action": {
+    "default_title": "Moodle Breaker",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": ["script.js"],
+  "options_page": "option.html"
+}
