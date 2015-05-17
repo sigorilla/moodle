@@ -1,9 +1,10 @@
 var buttHurt = (function () {
 
 	var main,
-			quiz,
-			cloze,
-			match;
+		quiz,
+		cloze,
+		match,
+		cross;
 
 	var _allowCheck;
 
@@ -20,7 +21,7 @@ var buttHurt = (function () {
 
 			main = document.querySelector("#MainDiv");
 
-			if (main && I !== undefined) {
+			if (main) {
 				quiz = main.querySelector(".QuizQuestions");
 
 				if (!quiz) {
@@ -108,7 +109,7 @@ var buttHurt = (function () {
 			id = parseInt(questions[i].id.substr(1).split("_")[0]);
 			val = parseInt(questions[i].id.substr(1).split("_")[1]);
 			questions[i].value = val;
-		};
+		}
 		if (_allowCheck) {
 			CheckAnswers();
 		}
@@ -127,11 +128,11 @@ var buttHurt = (function () {
 			DC[i].DockToR(FC[k]); 
 			DC[i].tag = k+1;
 			DC[i].Unhighlight();
-		};
+		}
 		if (_allowCheck) {
 			CheckAnswers();
 		}
-	}
+	};
 
 	var _checkState = function () {
 		var currState = false;
