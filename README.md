@@ -12,5 +12,6 @@ Keep in mind that at the moment there are solved only those tasks that are verif
 
 ## TODO
 
-* Other tasks, which check on the server side of Moodle.
-* Translation using Google Translator or other system.
+* Random duration of tasks
+* Other tasks, which check on the server side of Moodle
+* Translation using Google Translator or other system
