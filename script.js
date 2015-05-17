@@ -32,6 +32,11 @@ var buttHurt = (function () {
 						match = main.querySelector("#MatchDiv");
 						if (match) {
 							_match();
+						} else {
+							cross = main.querySelector(".CrosswordGrid");
+							if (cross) {
+								_cross();
+							}
 						}
 					}
 				} else {
@@ -128,6 +133,20 @@ var buttHurt = (function () {
 			DC[i].DockToR(FC[k]); 
 			DC[i].tag = k+1;
 			DC[i].Unhighlight();
+		}
+		if (_allowCheck) {
+			CheckAnswers();
+		}
+	};
+
+	var _cross = function () {
+		G = L;
+		for (var i = 0; i < G.length; i++) { 
+			for (var j = 0; j < G[0].length; j++) { 
+				if (G[i][j]) {
+					document.getElementById("L_" + i + "_" + j).innerHTML = G[i][j];
+				}
+			}
 		}
 		if (_allowCheck) {
 			CheckAnswers();
