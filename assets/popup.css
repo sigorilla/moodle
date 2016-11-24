@@ -1,20 +1,20 @@
 body {
-	min-width: 300px;
-	padding: 10px;
+    min-width: 300px;
+    padding: 10px;
 }
 label {
-	position: relative;
+    position: relative;
 }
 small#saved {
-	position: absolute;
-	top: 0;
-	left: 100%;
-	margin-left: 3px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 3px;
 }
 .container {
-	width: 970px;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
+    width: 970px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
